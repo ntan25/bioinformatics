@@ -1,7 +1,7 @@
 import time
 start_time = time.time()
 
-file = open('/Users/NeelTangella/Desktop/DNA.txt', 'r')
+file = open('.txt', 'r') #only takes text files
 original = file.read()
 proper = []
 
