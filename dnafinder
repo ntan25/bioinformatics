@@ -1,0 +1,16 @@
+file = open('.txt', 'r')
+# read_file = file.read()
+# target = 'AGCGTA'
+# new_target = (list(target))
+# stringer = (list(read_file))
+
+
+def searcher(dna_string, target_string):
+    for i in range(0, len(dna_string)):
+        if target_string == dna_string[i: i + len(target_string)]:
+            return i
+        else:
+            i += 1
+            continue
+
+print(searcher(stringer, new_target))
